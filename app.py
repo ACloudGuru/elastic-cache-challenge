@@ -60,11 +60,6 @@ def connect():
         # return a conn
         return conn
 
-    finally:
-        if(conn != None):
-            conn.close()
-            print("PostgreSQL connection is now closed")    
-
 app = Flask(__name__) 
 
 @app.before_request
